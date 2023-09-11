@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "TradingView Scraping Extension",
+    "version": "1.0",
+    "description": "Scrape tradingview stock data.",
+    "permissions": [ "storage", "activeTab" ],
+    "icons": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    }, 
+    "action": {
+        "default_icon": "images/icon16.png",
+        "default_popup": "popup.html",
+        "default_title": "Scrape TradingView"
+    
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.google.com/*"],
+            "js": ["content_scripts.js"]
+        }
+    ],
+    "host_permissions": [
+        "https://www.google.com/"
+    ]
+
+}
