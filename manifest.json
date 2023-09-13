@@ -17,12 +17,12 @@
     },
     "content_scripts": [
         {
-            "matches": ["https://www.google.com/*"],
+            "matches": ["https://www.synopi.com/*"],
             "js": ["content_scripts.js"]
         }
     ],
     "host_permissions": [
-        "https://www.google.com/"
+        "https://www.synopi.com/"
     ]
 
 }
